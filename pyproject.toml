@@ -1,0 +1,6 @@
+[tool.ruff.lint]
+ignore-init-module-imports = true
+
+[tool.pyright]
+typeCheckingMode = "basic"
+reportGeneralTypeIssues = false

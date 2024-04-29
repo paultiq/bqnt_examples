@@ -1,2 +1,9 @@
 scratch.ipynb
 *.zip
+*.pyc
+*.json
+__pycache___
+*.pyc
+.ruff_cache
+.vscode
+*.code-workspace
