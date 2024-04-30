@@ -2,23 +2,19 @@ import pandas as pd
 import numpy as np
 
 
-corr_query = """
-    get(sales_rev_turn)
+corr_query = """get(sales_rev_turn)
     for(members('SPX Index'))
     with(fpo=range(-9Q, 0Q), fpt=Q, fill=prev)
-    preferences(addcols=all)
-"""
+    preferences(addcols=all)"""
 
-basics_query = """
-    get(
+basics_query = """get(
       px_last
     ) for(
       'IBM US Equity'
     ) with(
       dates=range(-29d, 0d),
       fill=prev
-    )
-"""
+    )"""
 
 QUERY_RESULTS = {}
 

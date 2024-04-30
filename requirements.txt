@@ -1,0 +1,5 @@
+plotly
+xgboost
+duckdb
+nbappinator
+jinja2

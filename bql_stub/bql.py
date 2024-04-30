@@ -4,11 +4,12 @@ Not a general simulator, just for blogging purposes.
 
 import bql_faker
 import warnings
+import pandas as pd
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
 
-def combined_df(response: dict):
+def combined_df(response: pd.DataFrame) -> pd.DataFrame:
     return response
 
 
