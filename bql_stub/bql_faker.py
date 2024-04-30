@@ -10,10 +10,11 @@ corr_query = """get(sales_rev_turn)
 basics_query = """get(
       px_last
     ) for(
-      'IBM US Equity'
+      ['IBM US Equity']
     ) with(
       dates=range(-29d, 0d),
-      fill=prev
+      fill=prev,
+      currency=USD
     )"""
 
 QUERY_RESULTS = {}
