@@ -20,6 +20,6 @@ class Service:
 
     def execute(self, query: str):
         if query not in bql_faker.QUERY_RESULTS:
-            raise ValueError("Query not defined")
+            raise ValueError(f"Query not defined: {query=}")
         else:
             return bql_faker.QUERY_RESULTS[query]
