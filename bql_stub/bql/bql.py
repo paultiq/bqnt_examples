@@ -2,7 +2,7 @@
 Not a general simulator, just for blogging purposes.
 """
 
-import bql_faker
+from . import bql_faker
 import warnings
 import pandas as pd
 

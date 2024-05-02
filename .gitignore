@@ -7,3 +7,5 @@ __pycache___
 .ruff_cache
 .vscode
 *.code-workspace
+*.egg-info
+*checkpoint*
