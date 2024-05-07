@@ -1,0 +1,9 @@
+# This file is safe to commit
+
+NOTEBOOK_DIR = "."
+
+SEARCH = "**/*.ipynb"
+NOTEBOOK_TIMEOUT = 600
+
+# Notebook filenames separated by spaces
+SKIP_NOTEBOOKS = "bqnt_profiling.ipynb bqnt_iql_magics.ipynb"
