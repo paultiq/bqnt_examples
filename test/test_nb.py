@@ -26,6 +26,3 @@ def test_notebook(notebook):
         nb = nbformat.read(f, as_version=4)
     ep = ExecutePreprocessor(timeout=600)
     ep.preprocess(nb)
-
-
-# pytest -n 10
