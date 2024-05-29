@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import re
 
 corr_query = """get(sales_rev_turn)
     for(members('SPX Index'))
@@ -18,6 +18,14 @@ basics_query = """get(
     )"""
 
 QUERY_RESULTS = {}
+
+
+def stripquery(query: str) -> str:
+    query = re.sub(r"[\s\n]+", " ", query)
+    query = re.sub(r"preferences.*", "", query)
+    query = query.strip()
+
+    return query
 
 
 def basics():
@@ -62,5 +70,5 @@ def corr():
     return corr_response
 
 
-QUERY_RESULTS[basics_query] = basics()
-QUERY_RESULTS[corr_query] = corr()
+QUERY_RESULTS[stripquery(basics_query)] = basics()
+QUERY_RESULTS[stripquery(corr_query)] = corr()
