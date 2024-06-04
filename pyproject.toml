@@ -4,3 +4,30 @@ ignore-init-module-imports = true
 [tool.pyright]
 typeCheckingMode = "basic"
 reportGeneralTypeIssues = false
+[tool.poetry]
+name = "bqnt-examples"
+version = "0.0.0"
+description = ""
+authors = ["Paul T <paul@iqmo.com>"]
+readme = "README.md"
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+plotly = "^5.22.0"
+iql = "^1.8.5"
+xgboost = "^2.0.3"
+nbappinator = "^0.1.7"
+bql = {path = "bql_stub", develop = true}
+nbformat = "^5.10.4"
+scikit-learn = "^1.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+ipython = "^8.25.0"
+nbconvert = "^7.16.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

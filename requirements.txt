@@ -1,5 +1,4 @@
 plotly
 xgboost
-duckdb
+iql
 nbappinator
-jinja2

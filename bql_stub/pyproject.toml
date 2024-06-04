@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bql"
+version = "0.1.0"
+description = "Stub"
+authors = ["Paul T <paul@iqmo.com>"]
+readme = "README.md"
+packages = [{include = "bql"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

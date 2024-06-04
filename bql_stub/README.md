@@ -1,0 +1,1 @@
+Generator for fake BQL data, only for purposes of generating blog data. Not a general purpose tool.
